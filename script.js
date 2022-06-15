@@ -20,38 +20,34 @@ if(total % 2 ==0){
     console.log(`"Voce paga $${voce} e seu amigo paga $${amigo}"`)
 }
 
-let precoRefrigerante = parseFloat(prompt("Digite o valor do refrigerante"))
+let precoRefrigerante      = parseFloat(prompt("Digite o valor do refrigerante"))
 let quantidadeRefrigerante = parseInt(prompt("Quantas Unidades ?"))
 
-total = precoRefrigerante * quantidadeRefrigerante
-alert(`Valor total a ser pago: ${total}`)
+let totalRefrigerante      = precoRefrigerante * quantidadeRefrigerante
 
-let precoMacarrao = parseFloat(prompt("Digite o valor do macarrão"))
-let quantidadeMacarrao = parseInt(prompt("Quantas Unidades ?"))
+let precoMacarrao          = parseFloat(prompt("Digite o valor do macarrão"))
+let quantidadeMacarrao     = parseInt(prompt("Quantas Unidades ?"))
 
-total = precoMacarrao * quantidadeMacarrao
-alert(`Valor total a ser pago: ${total}`)
+let totalMacarrao          = precoMacarrao * quantidadeMacarrao
 
-let precoErvilha = parseFloat(prompt("Digite o valor do ervilha"))
-let quantidadeErvilha = parseInt(prompt("Quantas Unidades ?"))
+let precoErvilha           = parseFloat(prompt("Digite o valor do ervilha"))
+let quantidadeErvilha      = parseInt(prompt("Quantas Unidades ?"))
 
-total = precoErvilha * quantidadeErvilha
-alert(`Valor total a ser pago: ${total}`)
+let totalErvilha           = precoErvilha * quantidadeErvilha
 
-let precoArroz = parseFloat(prompt("Digite o valor do arroz"))
-let quantidadeArroz = parseInt(prompt("Quantas Unidades ?"))
+let precoArroz             = parseFloat(prompt("Digite o valor do arroz"))
+let quantidadeArroz        = parseInt(prompt("Quantas Unidades ?"))
 
-total = precoArroz * quantidadeArroz
-alert(`Valor total a ser pago: ${total}`)
+let totalArroz             = precoArroz * quantidadeArroz
 
-let precoFeijao = parseFloat(prompt("Digite o valor do feijão"))
-let quantidadeFeijao = parseInt(prompt("Quantas Unidades ?"))
+let precoFeijao            = parseFloat(prompt("Digite o valor do feijão"))
+let quantidadeFeijao       = parseInt(prompt("Quantas Unidades ?"))
 
-total = precoFeijao * quantidadeFeijao
-alert(`Valor total a ser pago: ${total}`)
+let totalFeijao            = precoFeijao * quantidadeFeijao
 
-let precoVinho = parseFloat(prompt("Digite o valor do vinho"))
-let quantidadeVinho = parseInt(prompt("Quantas Unidades ?"))
+let precoVinho             = parseFloat(prompt("Digite o valor do vinho"))
+let quantidadeVinho        = parseInt(prompt("Quantas Unidades ?"))
 
-total = precoVinho * quantidadeVinho
-alert(`Valor total a ser pago: ${total}`)
+let totalVinho             = precoVinho * quantidadeVinho
+let totaldaCompra          = totalRefrigerante + totalMacarrao + totalErvilha + totalArroz + totalFeijao + totalVinho
+alert(`Valor total a ser pago: $${totaldaCompra}`)
